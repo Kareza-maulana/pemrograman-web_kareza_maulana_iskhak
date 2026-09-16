@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIMPUS-Mini | Tambah Buku</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="dashboard-layout">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <aside class="sidebar">
+        <h1>Toko Barokah Jaya</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="list.html">Daftar Barang</a></li>
+                <li><a href="tambah.html">Tambah Barang</a></li>
+                <li><a href="../anggota/list.html">Daftar Pembeli</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <header class="dashboard-header">
+        <div class="mobile-header-brand">
+            <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+            <span>Toko Barokah Jaya</span>
+        </div>
+        <div class="user-profile">
+            <div class="user-avatar">A</div>
+            <div>
+                <strong>Admin Toko</strong>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="tambah-buku">
+            <h2>Tambah produk</h2>
+            <p class="form-intro">Lengkapi informasi produk yang akan ditambahkan.</p>
+            <form>
+                <p>
+                    <label for="judul">Merek <span class="required-mark">*</span></label>
+                    <input type="text" id="judul" name="judul" required>
+                </p>
+                <p>
+                    <label for="pengarang">Quantity <span class="required-mark">*</span></label>
+                    <input type="text" id="pengarang" name="pengarang" required>
+                </p>
+                <p>
+                    <label for="isbn">Kode Produk</label>
+                    <input type="text" id="isbn" name="isbn">
+                </p>
+                <p>
+                    <label for="stok">Stok <span class="required-mark">*</span></label>
+                    <input type="number" id="stok" name="stok" min="0" required>
+                </p>
+                <p>
+                    <label for="kategori">Kategori <span class="required-mark">*</span></label>
+                    <select id="kategori" name="kategori">
+                        <option value="fiksi">Alat Tulis </option>
+                        <option value="non-fiksi">Peralatan rumah</option>
+                        <option value="referensi">Sembako</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Simpan</button>
+                </p>
+            </form>
+            <small class="form-note"><span class="required-mark">*</span> Wajib diisi</small>
+        </section>
+    </main>
+
+   
+</body>
+</html>
