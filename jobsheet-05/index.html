@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>toko barokah jaya | Beranda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class ="dashboard-layout">
+    <input type = "checkbox" id="nav-toggle" class="nav-toggle">
+    <aside class="sidebar">
+        <h1>toko barokah jaya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="buku/list.html">Daftar Barang</a></li>
+                <li><a href="buku/tambah.html">Tambah Barang</a></li>
+                <li><a href="anggota/list.html">Daftar Pembeli</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <header class="dashboard-header">
+        <div class="mobile-header-brand">
+            <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+            <span>toko barokah jaya</span>
+        </div>
+        <div class="user-profile">
+            <div class="user-avatar">A</div>
+            <div>
+                <strong>Admin Toko</strong>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Selamat Datang di Toko Barokah Jaya</h2>
+            <p>Aplikasi sederhana untuk mengelola data buku dan anggota toko.</p>
+        </section>
+
+        <section class="section-title">
+            <h2>Laporan Penjualan</h2>
+            <section>
+            <article>
+                <h3>Total Produk</h3>
+                <p>12</p>
+            </article>
+            <article>
+                <h3>Total Pembeli</h3>
+                <p>12</p>
+            </article>
+            <article>
+                <h3>Total Transaksi</h3>
+                <p>8</p>
+            </article>
+            <article>
+                <h3>Total Penjualan</h3>
+                <p>Rp 1.200.000</p>
+            </article>
+            </section>
+        </section>
+
+        <section class="sales-dashboard" aria-label="Statistik penjualan">
+            <article class="sales-chart">
+                <div class="panel-heading"><div><p class="panel-eyebrow">Performa penjualan</p><h2>Grafik Penjualan</h2></div><span class="panel-period">6 Bulan</span></div>
+                <div class="bar-chart" aria-label="Grafik penjualan dari Januari sampai Juni">
+                    <div class="chart-column"><span class="chart-value">Rp 1,2 jt</span><div class="chart-bar" style="height: 62%;"></div><span class="chart-label">Jan</span></div>
+                    <div class="chart-column"><span class="chart-value">Rp 1,5 jt</span><div class="chart-bar" style="height: 78%;"></div><span class="chart-label">Feb</span></div>
+                    <div class="chart-column"><span class="chart-value">Rp 1,1 jt</span><div class="chart-bar" style="height: 56%;"></div><span class="chart-label">Mar</span></div>
+                    <div class="chart-column"><span class="chart-value">Rp 1,8 jt</span><div class="chart-bar" style="height: 92%;"></div><span class="chart-label">Apr</span></div>
+                    <div class="chart-column"><span class="chart-value">Rp 1,6 jt</span><div class="chart-bar" style="height: 84%;"></div><span class="chart-label">Mei</span></div>
+                    <div class="chart-column"><span class="chart-value">Rp 2,0 jt</span><div class="chart-bar" style="height: 100%;"></div><span class="chart-label">Jun</span></div>
+                </div>
+            </article>
+            <article class="best-selling">
+                <div class="panel-heading"><div><p class="panel-eyebrow">Berdasarkan transaksi</p><h2>Produk Paling Laris</h2></div></div>
+                <div class="product-list">
+                    <div class="product-row"><div class="product-meta"><span>01</span><strong>Buku Tulis</strong><b>86%</b></div><div class="product-track"><span style="width: 86%;"></span></div></div>
+                    <div class="product-row"><div class="product-meta"><span>02</span><strong>Pulpen Gel</strong><b>72%</b></div><div class="product-track"><span style="width: 72%;"></span></div></div>
+                    <div class="product-row"><div class="product-meta"><span>03</span><strong>Buku Gambar</strong><b>58%</b></div><div class="product-track"><span style="width: 58%;"></span></div></div>
+                    <div class="product-row"><div class="product-meta"><span>04</span><strong>Penghapus</strong><b>41%</b></div><div class="product-track"><span style="width: 41%;"></span></div></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
